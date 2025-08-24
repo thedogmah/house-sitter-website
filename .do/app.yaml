@@ -1,0 +1,22 @@
+name: ryans-house-sitting
+services:
+- name: web
+  source_dir: /
+  github:
+    repo: your-username/house-sitter-website
+    branch: main
+  run_command: npm start
+  build_command: npm run build
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  http_port: 3000
+  routes:
+  - path: /
+  envs:
+  - key: NODE_ENV
+    value: production
+  - key: NEXT_PUBLIC_BUSINESS_NAME
+    value: "Ryan's House Sitting"
+  - key: NEXT_PUBLIC_BUSINESS_DESCRIPTION
+    value: "Professional house sitting services across Europe and worldwide"

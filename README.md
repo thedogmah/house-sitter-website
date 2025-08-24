@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ryan's House Sitting Website
+
+A professional website for Ryan's individual house sitting business, serving clients across Europe and worldwide.
+
+## Features
+
+- **Professional Design**: Modern, responsive design optimized for conversions
+- **Service Showcase**: Detailed information about house sitting services
+- **Contact Form**: Easy inquiry submission for potential clients
+- **SEO Optimized**: Built for Google Ads and search engine visibility
+- **Mobile Responsive**: Works perfectly on all devices
+- **Fast Loading**: Optimized for performance and user experience
+
+## Tech Stack
+
+- **Frontend**: Next.js 14 with TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Heroicons
+- **Deployment**: Vercel (recommended)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd house-sitter-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Development
 
-To learn more about Next.js, take a look at the following resources:
+### Available Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Project Structure
 
-## Deploy on Vercel
+```
+src/
+├── app/
+│   ├── layout.tsx      # Main layout with metadata
+│   ├── page.tsx        # Homepage with all sections
+│   └── globals.css     # Global styles
+├── components/          # Reusable components (if added)
+└── lib/                # Utility functions (if added)
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Personal Information
+Update the following in `src/app/page.tsx`:
+- Your name and personal details
+- Services offered
+- Contact information
+- About section content
+
+### Styling
+- Colors: Modify Tailwind classes or add custom CSS variables
+- Layout: Adjust spacing, sections, and component arrangement
+- Images: Add your own photos to the `public/` folder
+
+### SEO
+Update metadata in `src/app/layout.tsx`:
+- Page title and description
+- Keywords for your target market
+- Open Graph tags for social sharing
+
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy automatically on every push
+
+### Other Platforms
+
+- **Netlify**: Similar to Vercel, great for static sites
+- **Railway**: Good for full-stack applications
+- **AWS/GCP**: For enterprise deployments
+
+## Google Ads Optimization
+
+### Landing Page Best Practices
+- Clear value proposition above the fold
+- Professional photos and trust indicators
+- Easy contact form with minimal fields
+- Fast loading times (<3 seconds)
+- Mobile-optimized design
+
+### Target Keywords
+- "house sitter Europe"
+- "professional house sitting"
+- "pet sitter while away"
+- "house sitting services"
+- "reliable house sitter"
+
+## Analytics & Tracking
+
+Consider adding:
+- Google Analytics 4
+- Google Tag Manager
+- Facebook Pixel (if using Facebook Ads)
+- Conversion tracking for form submissions
+
+## Maintenance
+
+- Regular content updates
+- Photo gallery refresh
+- Testimonial additions
+- Service updates
+- Performance monitoring
+
+## Support
+
+For technical support or customization requests, contact the development team.
+
+---
+
+**Built with ❤️ for Ryan's House Sitting Business**
