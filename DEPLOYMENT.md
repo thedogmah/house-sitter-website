@@ -25,7 +25,7 @@ This guide will walk you through deploying your house sitting website to GitHub 
 
 ```bash
 cd C:\house-sitter-website
-git remote set-url origin https://github.com/YOUR_USERNAME/house-sitter-website.git
+git remote set-url origin https://github.com/thedogmah/house-sitter-website.git
 ```
 
 Replace `YOUR_USERNAME` with your actual GitHub username.
@@ -62,7 +62,7 @@ git add .
 git commit -m "Initial commit: Professional house sitting website"
 
 # Push to GitHub
-git push -u origin main
+git push -u origin master
 ```
 
 ### 3.2 Set Up GitHub Secrets
@@ -81,7 +81,7 @@ git push -u origin main
 2. Click **Create App**
 3. Choose **GitHub** as source
 4. Select your `house-sitter-website` repository
-5. Choose the `main` branch
+5. Choose the `master` branch
 6. DigitalOcean will auto-detect it's a Next.js app
 
 ### 4.2 Configure App Settings
@@ -107,7 +107,7 @@ Add these environment variables:
 
 ## 🔄 Step 6: Continuous Deployment
 
-Now every time you push to the `main` branch on GitHub:
+Now every time you push to the `master` branch on GitHub:
 1. GitHub Actions will automatically test your code
 2. If tests pass, it will deploy to DigitalOcean
 3. Your website will be updated automatically
